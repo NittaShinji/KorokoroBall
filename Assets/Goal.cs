@@ -4,20 +4,14 @@ using UnityEngine;
 
 public class Goal : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject clearText;
+    public GameObject nextButton;
 
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("ÉSÅ[Éã!");
+
+        clearText.SetActive(true);
+        nextButton.SetActive(true);
     }
 }

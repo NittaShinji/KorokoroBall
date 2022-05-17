@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         respawnPoint = transform.position;
+        rigidbody = gameObject.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
